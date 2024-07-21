@@ -1,0 +1,23 @@
+{
+  "name": "withercode",
+  "version": "1.0.0",
+  "description": "Discord Bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Robcio14/WitherCode-Bot.git)"
+  },
+  "keywords": [
+    "discord",
+    "disocrd-bot",
+    "discord-js"
+  ],
+  "author": "Dwayne dc: dwayne5",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  }
+}
