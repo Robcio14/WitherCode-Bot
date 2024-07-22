@@ -1,0 +1,15 @@
+{
+  "Token": "",
+  "TicketConfig":  {
+    "adminid": ""
+    },
+  "ModerationCommand": {
+    "moderationroleid": "",
+    "embedcommandroleid": "",
+    "veryficommandroleid": ""
+  },
+  "StrefaPremium": {
+    "premiumreoleid": ""
+  }
+
+}
