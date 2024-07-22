@@ -1,5 +1,5 @@
 {
-  "Token": "",
+  "Token": "MTI2NTAxNTEzMTQxOTQ0MzI1MQ.G2EVWx.9CEIlRC2cFvY-BwGtEjQtjji2KPMGJ0UN8R4ws",
   "TicketConfig":  {
     "adminid": ""
     },
@@ -10,6 +10,16 @@
   },
   "StrefaPremium": {
     "premiumreoleid": ""
+  },
+  "Propozycje": {
+    "Kanal": "1264160222205972617"
+  },
+  "Głowne":{
+    "IdSerwera": "1264160218766512220"
+  },
+  "DropRole": {
+    "zniżka5id": "",
+    "zniżka10id": "",
+    "zniżka15id": ""
   }
-
 }
