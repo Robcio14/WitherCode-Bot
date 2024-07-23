@@ -1,16 +1,8 @@
 {
-  "Token": "MTI2NTAxNTEzMTQxOTQ0MzI1MQ.G2EVWx.9CEIlRC2cFvY-BwGtEjQtjji2KPMGJ0UN8R4ws",
+  "Token": "",
   "TicketConfig":  {
-    "adminid": ""
+    "Kategoria": ""
     },
-  "ModerationCommand": {
-    "moderationroleid": "",
-    "embedcommandroleid": "",
-    "veryficommandroleid": ""
-  },
-  "StrefaPremium": {
-    "premiumreoleid": ""
-  },
   "Propozycje": {
     "Kanal": "1264160222205972617"
   },
@@ -21,5 +13,11 @@
     "zniżka5id": "",
     "zniżka10id": "",
     "zniżka15id": ""
+  },
+  "AutoModerator": {
+    "linkSenderRoleID": "1264160219123023884"
+  },
+  "Logi": {
+    "Kanal": "1265374136566546512"
   }
 }

@@ -66,7 +66,7 @@ module.exports = {
           ephemeral: true,
           embeds: [
             new EmbedBuilder()
-              .setAuthor({ name: 'WitcherCode' })
+              .setAuthor({ name: 'WitcherCode - Propozycja' })
               .setColor("Red")
               .setDescription(`${emoji.msg.blad}・Nie możesz dwukrotnie zagłosować na tą samą opcję!`)
               .setFooter(({ text: "WitherCode - Propozycje" }))          ]
@@ -76,7 +76,7 @@ module.exports = {
           ephemeral: true,
           embeds: [
             new EmbedBuilder()
-              .setAuthor({ name: 'WitcherCode' })
+                .setAuthor({ name: 'WitcherCode - Propozycja' })
               .setDescription(`${emoji.msg.sukces}・Pomyślnie oddałeś swój głos!`)
               .setColor('Green')
                 .setFooter(({ text: "WitherCode - Propozycje" }))          ]        });
@@ -102,7 +102,7 @@ module.exports = {
           ephemeral: true,
           embeds: [
             new EmbedBuilder()
-              .setAuthor({ name: 'WitcherCode' })
+                .setAuthor({ name: 'WitcherCode - Propozycja' })
               .setColor("Red")
               .setDescription(`${emoji.msg.blad}・Nie możesz dwukrotnie zagłosować na tą samą opcję!`)
                 .setFooter(({ text: "WitherCode - Propozycje" }))          ]        });
@@ -111,7 +111,7 @@ module.exports = {
           ephemeral: true,
           embeds: [
             new EmbedBuilder()
-              .setAuthor({ name: 'WitcherCode' })
+                .setAuthor({ name: 'WitcherCode - Propozycja' })
               .setDescription(`${emoji.msg.sukces}・Pomyślnie oddałeś swój głos!`)
               .setColor('Green')
                 .setFooter(({ text: "WitherCode - Propozycje" }))          ]        });
@@ -171,13 +171,13 @@ module.exports = {
 
     const btn_up = new ButtonBuilder()
       .setLabel(String(SuggestionsData.upvotes))
-      .setEmoji('934577543456112681')
+        .setEmoji('✅')
       .setStyle(ButtonStyle.Secondary)
       .setCustomId('Propozycja_za')
       .setDisabled(false);
     const btn_down = new ButtonBuilder()
       .setLabel(String(SuggestionsData.downvotes))
-      .setEmoji('934577543422558218')
+        .setEmoji('❌')
       .setStyle(ButtonStyle.Secondary)
       .setCustomId('Propozycja_przeciw')
       .setDisabled(false);

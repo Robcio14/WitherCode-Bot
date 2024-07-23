@@ -1,26 +1,21 @@
-const { Client, GatewayIntentBits, Partials, Collection,EmbedBuilder} = require('discord.js');
-
-const {Guilds, GuildMembers, GuildMessages,MessageContent,GuildMessageReactions} = GatewayIntentBits;
-const {User, Message, GuildMember,ThreadMember, Channel,SendMessages} = Partials;
-
-const {loadEvents} = require('./Handlers/eventHandler');
-const {loadCommands} = require('./Handlers/commandHandler');
-
-
+const { Client, GatewayIntentBits, Partials, Collection, EmbedBuilder } = require('discord.js');
+const { Guilds, GuildMembers, GuildMessages, MessageContent, GuildMessageReactions } = GatewayIntentBits;
+const { User, Message, GuildMember, ThreadMember, Channel, SendMessages } = Partials;
+const { loadEvents } = require('./Handlers/eventHandler');
+const { loadCommands } = require('./Handlers/commandHandler');
 
 const client = new Client({
-    intents: [Guilds, GuildMembers, GuildMessages,MessageContent,GuildMessageReactions],
-    partials: [User, Message, GuildMember, ThreadMember,SendMessages, Channel],
+    intents: [Guilds, GuildMembers, GuildMessages, MessageContent, GuildMessageReactions],
+    partials: [User, Message, GuildMember, ThreadMember, SendMessages, Channel],
 });
 
 client.commands = new Collection();
-client.config = require('../WitherCode/BotConfig/config.json');
+client.config = require('./BotConfig/config.json');
 
 client.login(client.config.Token).then(() => {
     loadEvents(client);
     loadCommands(client);
-});
-
+}).catch(console.error);
 
 client.on("error", (err) => {
     handleError("Błąd Discord API:", err);
@@ -43,7 +38,7 @@ process.on("warning", (warn) => {
 });
 
 function handleError(message, error) {
-    const ChannelID = "1264160222570610742";
+    const ChannelID = "1265374136566546512";
     console.log(message, error);
     const Embed = new EmbedBuilder()
         .setColor("Aqua")

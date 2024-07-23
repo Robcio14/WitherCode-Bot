@@ -1,7 +1,7 @@
 const { EmbedBuilder, ButtonBuilder, ButtonStyle, PermissionFlagsBits, ActionRowBuilder } = require('discord.js');
-const ee = require(`${process.cwd()}/botconfig/embed.json`);
-const emoji = require(`${process.cwd()}/botconfig/emojis.json`);
-const ustawienia = require(`${process.cwd()}/botconfig/ustawienia.json`);
+const ee = require(`${process.cwd()}/BotConfig/embed.json`);
+const emoji = require(`${process.cwd()}/BotConfig/emojis.json`);
+const ustawienia = require(`${process.cwd()}/BotConfig/config.json`);
 const db = require('../../Database/PropozycjeDB');
 const { Collection } = require('discord.js');
 
@@ -32,23 +32,23 @@ module.exports = {
       }
 
       const btn_up = new ButtonBuilder()
-        .setLabel(`0`)
-        .setEmoji('934577543456112681')
-        .setStyle(ButtonStyle.Secondary)
-        .setCustomId('Propozycja_za')
-        .setDisabled(false);
+          .setLabel(`0`)
+          .setEmoji('✅')
+          .setStyle(ButtonStyle.Secondary)
+          .setCustomId('Propozycja_za')
+          .setDisabled(false);
       const btn_down = new ButtonBuilder()
-        .setLabel(`0`)
-        .setEmoji('934577543422558218')
-        .setStyle(ButtonStyle.Secondary)
-        .setCustomId('Propozycja_przeciw')
-        .setDisabled(false);
+          .setLabel(`0`)
+          .setEmoji('❌')
+          .setStyle(ButtonStyle.Secondary)
+          .setCustomId('Propozycja_przeciw')
+          .setDisabled(false);
       const btn_who = new ButtonBuilder()
-        .setLabel('Kto zagłosował?')
-        .setEmoji('❓')
-        .setStyle(ButtonStyle.Primary)
-        .setCustomId('Propozycja_kto')
-        .setDisabled(false);
+          .setLabel('Kto zagłosował?')
+          .setEmoji('❓')
+          .setStyle(ButtonStyle.Primary)
+          .setCustomId('Propozycja_kto')
+          .setDisabled(false)
       const row = new ActionRowBuilder()
         .addComponents([btn_up, btn_down, btn_who]);
       var embed = new EmbedBuilder()
