@@ -6,7 +6,7 @@ const {
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('nadaj')
+        .setName("nadaj")
         .setDescription('Nadaj rolę użytkownikowi')
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
         .addUserOption((option) =>

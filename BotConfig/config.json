@@ -1,8 +1,15 @@
 {
   "Token": "",
+  "linkSenderRoleID":"1265713342048243846 ",
   "TicketConfig":  {
-    "Kategoria": ""
-    },
+    "Kategoria": "1264160220318404611",
+    "Bot_Dev": "1264160219164971137",
+    "Java_Dev": "1264160219123023885",
+    "Grafik": "1264160219123023887",
+    "Skript_Dev": "1264179958419292170",
+    "Zespol": "1264160219164971133"
+
+  },
   "Propozycje": {
     "Kanal": "1264160222205972617"
   },
@@ -14,9 +21,7 @@
     "zniżka10id": "",
     "zniżka15id": ""
   },
-  "AutoModerator": {
-    "linkSenderRoleID": "1264160219123023884"
-  },
+
   "Logi": {
     "Kanal": "1265374136566546512"
   }

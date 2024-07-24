@@ -28,23 +28,34 @@ module.exports = {
                     {
                         label: 'Discord Bot',
                         value: 'discord_bot',
-                        description: 'Kliknij, jeśli chcesz kupić bota.',
+                        description: 'Kliknij, jeśli chcesz kupić bota na swój serwer,wybierz tą obcję',
                     },
                     {
                         label: 'Grafiki',
                         value: 'grafiki',
-                        description: 'Kliknij, jeśli chcesz kupić grafikę.',
+                        description: 'Kliknij, jeśli chcesz kupić grafikę,wybierz tą obcję',
                     },
                     {
-                        label: 'Pluginy',
+                        label: 'Pluginy Minecraft',
                         value: 'pluginy',
-                        description: 'Kliknij, jeśli chcesz zakupić plugin ',
+                        description: 'Kliknij, jeśli chcesz zakupić plugin na swój serwer,wybierz tą obcję',
                     },
                     {
                         label: 'Skrypty',
                         value: 'skrypty',
-                        description: 'Kliknij, jeśli chcesz kupić skrypt.',
+                        description: 'Kliknij, jeśli chcesz kupić skrypt na swój serwer, wybierz tą obcję',
                     },
+                    {
+                        label: 'Pomoc',
+                        value:'pomoc',
+                        description: 'Kliknij jeżeli potrzebujesz pomocy, wybierz tą obcję'
+                    },
+                    {
+                        label:"Serwery Discord",
+                        value:"dc",
+                        description: "Kliknij, jeśli chcesz kupić,wybierz tą obcję "
+                    }
+
                 ])
         );
 

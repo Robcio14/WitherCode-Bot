@@ -36,7 +36,7 @@ module.exports = {
                 }
 
                 try {
-                    const muteDuration = '3d';
+                    const muteDuration = '7d';
                     await message.member.timeout(ms(muteDuration));
 
                     const embed = new EmbedBuilder()
