@@ -1,3 +1,10 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
+
 const { EmbedBuilder, ButtonBuilder, ButtonStyle, PermissionFlagsBits, ActionRowBuilder } = require('discord.js');
 const ee = require(`${process.cwd()}/BotConfig/embed.json`);
 const emoji = require(`${process.cwd()}/BotConfig/emojis.json`);

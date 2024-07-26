@@ -1,3 +1,9 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { EmbedBuilder } = require("discord.js");
 

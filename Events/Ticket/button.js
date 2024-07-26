@@ -1,7 +1,15 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
+
+
 const { ActionRowBuilder, ButtonBuilder, EmbedBuilder, ButtonStyle, ChannelType, PermissionFlagsBits } = require('discord.js');
 const DISCORD_INVITE_LINK = 'https://discord.gg/Utf8kK4B';
 
-// Mapa przechowująca informacje o aktywnych ticketach użytkowników w poszczególnych kategoriach
+
 
 
 module.exports = {

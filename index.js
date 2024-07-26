@@ -1,3 +1,9 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
 const { Client, GatewayIntentBits, Partials, Collection, EmbedBuilder } = require('discord.js');
 const { Guilds, GuildMembers, GuildMessages, MessageContent, GuildMessageReactions } = GatewayIntentBits;
 const { User, Message, GuildMember, ThreadMember, Channel, SendMessages } = Partials;

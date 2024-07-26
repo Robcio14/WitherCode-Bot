@@ -1,3 +1,9 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const db3 = new sqlite3.Database('./Database/Database/deltemsglog.sqlite', (err) => {

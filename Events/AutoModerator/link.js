@@ -1,8 +1,14 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
 const fs = require("fs");
 const { EmbedBuilder } = require("discord.js");
 const ms = require("ms");
 
-const settingsPath = `${process.cwd()}/BotConfig/config.json`;
+const settingsPath = require(`${process.cwd()}/BotConfig/config.json`);
 
 function checkForLink(content, member, linkSenderRoleID) {
     const hasLinkSenderRole = member.roles.cache.has(linkSenderRoleID);
@@ -56,7 +62,7 @@ module.exports = {
             }
         } catch (err) {
             console.error('Błąd podczas odczytu pliku config.json:', err.message);
-            // W przypadku błędu w odczycie ustawień, nie robimy niczego więcej, po prostu kontynuujemy działanie
+
         }
     }
 };

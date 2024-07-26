@@ -1,3 +1,10 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
+
 const { Events, EmbedBuilder } = require('discord.js');
 const db3 = require('../../Database/MessageLogsDatabase');
 

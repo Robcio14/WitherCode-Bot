@@ -1,3 +1,8 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
 const sqlite3 = require('sqlite3').verbose();
 
 // Create and connect to the database

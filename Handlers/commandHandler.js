@@ -1,3 +1,9 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
 function loadCommands(client) {
     const ascii = require("ascii-table");
     const fs = require("fs");

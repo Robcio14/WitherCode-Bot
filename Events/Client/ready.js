@@ -1,3 +1,9 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
+
 const { Client } = require('discord.js');
 const config = require('../../BotConfig/config.json');
 

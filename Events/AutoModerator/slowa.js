@@ -1,3 +1,8 @@
+// |----------------------------------------------------------|
+// |
+// | COPYRIGHT dwayne5 | 2024
+// |
+// |----------------------------------------------------------|
 const fs = require("fs");
 const { EmbedBuilder } = require('discord.js');
 const ms = require('ms');
