@@ -5,7 +5,7 @@
 // |----------------------------------------------------------|
 const { ActionRowBuilder, ButtonBuilder, EmbedBuilder, ButtonStyle, ChannelType, PermissionFlagsBits } = require('discord.js');
 const { TicketConfig } = require(`${process.cwd()}/BotConfig/config.json`);
-const { Kategoria, Bot_Dev,Java_Dev,Grafik,Skript_Dev,Zespol } = TicketConfig;
+const { Kategoria, Bot_Dev,Java_Dev,Grafik,Skript_Dev,Support,Zespol } = TicketConfig;
 
 module.exports = {
     name: 'interactionCreate',
@@ -156,7 +156,7 @@ module.exports = {
                     name: `${user.username}-grafiki`,
                     type: ChannelType.GuildText,
                     parent: Kategoria,
-                    topic: user.id, // Use the user ID to mark this channel
+                    topic: user.id,
                     permissionOverwrites: [
                         {
                             id: user.id,
@@ -167,7 +167,7 @@ module.exports = {
                             deny: [PermissionFlagsBits.ViewChannel],
                         },
                         {
-                            id: Grafik, // Allow the Grafik role to view the channel
+                            id: Grafik,
                             allow: [PermissionFlagsBits.ViewChannel],
                         }
                     ],
@@ -236,7 +236,7 @@ module.exports = {
                     name: `${user.username}-Plugin`,
                     type: ChannelType.GuildText,
                     parent: Kategoria,
-                    topic: user.id, // Use the user ID to mark this channel
+                    topic: user.id,
                     permissionOverwrites: [
                         {
                             id: user.id,
@@ -247,7 +247,7 @@ module.exports = {
                             deny: [PermissionFlagsBits.ViewChannel],
                         },
                         {
-                            id: Java_Dev, // Allow the Java_Dev role to view the channel
+                            id: Java_Dev,
                             allow: [PermissionFlagsBits.ViewChannel],
                         }
                     ],
@@ -315,7 +315,7 @@ module.exports = {
                     name: `${user.username}-skrypt`,
                     type: ChannelType.GuildText,
                     parent: Kategoria,
-                    topic: user.id, // Use the user ID to mark this channel
+                    topic: user.id,
                     permissionOverwrites: [
                         {
                             id: user.id,
@@ -326,7 +326,7 @@ module.exports = {
                             deny: [PermissionFlagsBits.ViewChannel],
                         },
                         {
-                            id: Skript_Dev, // Allow the Java_Dev role to view the channel
+                            id: Skript_Dev,
                             allow: [PermissionFlagsBits.ViewChannel],
                         }
                     ],
@@ -395,7 +395,7 @@ module.exports = {
                     name: `${user.username}-pomoc`,
                     type: ChannelType.GuildText,
                     parent: Kategoria,
-                    topic: user.id, // Use the user ID to mark this channel
+                    topic: user.id,
                     permissionOverwrites: [
                         {
                             id: user.id,
@@ -407,7 +407,7 @@ module.exports = {
                         },
                         {
                             id: Zespol,
-                            deny: [PermissionFlagsBits.ViewChannel],
+                            allow: [PermissionFlagsBits.SendMessages, PermissionFlagsBits.ViewChannel],
                         }
                     ],
                 });
@@ -490,8 +490,8 @@ module.exports = {
                             deny: [PermissionFlagsBits.ViewChannel],
                         },
                         {
-                            id: Zespol,
-                            deny: [PermissionFlagsBits.ViewChannel],
+                            id: Support,
+                            allow: [PermissionFlagsBits.SendMessages, PermissionFlagsBits.ViewChannel],
                         }
                     ],
                 });

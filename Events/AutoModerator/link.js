@@ -8,7 +8,7 @@ const fs = require("fs");
 const { EmbedBuilder } = require("discord.js");
 const ms = require("ms");
 
-const settingsPath = require(`${process.cwd()}/BotConfig/config.json`);
+const settingsPath = `${process.cwd()}/BotConfig/config.json`;
 
 function checkForLink(content, member, linkSenderRoleID) {
     const hasLinkSenderRole = member.roles.cache.has(linkSenderRoleID);
@@ -17,7 +17,7 @@ function checkForLink(content, member, linkSenderRoleID) {
     }
 
     const urlCheck = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
-    return urlCheck.test(content) || content.includes("discord.gg") || content.includes("discord.com/invite/") || content.includes("https://") || content.includes("http://");
+    return urlCheck.test(content) || content.includes("discord.gg") || content.includes("discord.com/invite/");
 }
 
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
         try {
             const rawData = fs.readFileSync(settingsPath, 'utf8');
             const settings = JSON.parse(rawData);
-            const linkSenderRoleID = settings.AutoModerator.linkSenderRoleID;
+            const linkSenderRoleID = settings.Administracja.linkSenderRoleID;
 
             if (!linkSenderRoleID) {
                 throw new Error('Nie można odnaleźć ID roli dla nadawcy linku w pliku ustawienia.json');

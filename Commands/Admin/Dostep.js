@@ -5,9 +5,9 @@
 // |----------------------------------------------------------|
 
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { PermissionFlagsBits } = require("discord.js");
-const { Dostep } = require(`${process.cwd()}/BotConfig/config.json`);
-const { zweryfikowany } = Dostep;
+const { PermissionFlagsBits } = require('discord.js');
+
+const roleId = '1264160219123023884';
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -18,25 +18,23 @@ module.exports = {
                 .setDescription('Użytkownik, który otrzyma rolę')
                 .setRequired(true)),
     async execute(interaction) {
-
         if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) {
             return interaction.reply('Nie masz uprawnień do użycia tej komendy.');
         }
 
-
-        const roleId = zweryfikowany;
-
-
         if (!roleId) {
-            return interaction.reply('Rola "zweryfikowany" nie została zdefiniowana w konfiguracji.');
+            return interaction.reply('ID roli "zweryfikowany" nie zostało zdefiniowane.');
         }
-
 
         const user = interaction.options.getUser('użytkownik');
         const member = await interaction.guild.members.fetch(user.id);
 
-
-        await member.roles.add(roleId);
-        interaction.reply(`Nadano rolę "zweryfikowany" użytkownikowi ${user.tag}.`);
+        try {
+            await member.roles.add(roleId);
+            interaction.reply(`Nadano rolę "zweryfikowany" użytkownikowi ${user.tag}.`);
+        } catch (error) {
+            console.error('Błąd podczas nadawania roli:', error);
+            interaction.reply('Wystąpił błąd podczas nadawania roli.');
+        }
     },
 };

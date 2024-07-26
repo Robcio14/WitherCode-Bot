@@ -25,7 +25,6 @@ module.exports = {
 
                 const author = interaction.user;
                 if (author) {
-                    // Tworzenie embeda
                     const embed = new EmbedBuilder()
                         .setTitle('Ticket Zamknięty ')
                         .setDescription(`
@@ -39,10 +38,9 @@ module.exports = {
                         .setColor('#0000FF')
                         .setFooter({ text: "WitherCode - Ticket" })
 
-                    // Wysłanie embeda na prywatną wiadomość użytkownika
+
                     await author.send({ embeds: [embed] });
 
-                    // Usunięcie kanału
                     await ticketChannel.delete();
                 }
             }
